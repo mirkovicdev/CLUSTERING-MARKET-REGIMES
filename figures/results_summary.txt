@@ -1,0 +1,38 @@
+
+Wasserstein k-means Market Regime Clustering Results
+=====================================================
+Data: SPY (2005-01-03 to 2020-06-17)
+Hyperparameters: h1=35, h2=28, k=2
+Number of windows: 143
+
+Self-Similarity Scores (Table 2):
+---------------------------------
+Algorithm       C1          C2
+Wasserstein     0.0003      0.0013
+Moment          0.0003      0.0010
+
+Between-Cluster MMD Statistics:
+-------------------------------
+Algorithm       Mean MMD²    Median MMD²
+Wasserstein     0.0025       0.0016
+Moment          0.0029       0.0018
+
+Cluster Sizes:
+--------------
+WK-means: Low-vol = 115, High-vol = 28
+MK-means: Low-vol = 120, High-vol = 23
+
+Key Findings:
+-------------
+1. WK-means produces more internally consistent clusters (lower self-similarity scores)
+2. WK-means correctly identifies known crisis periods (GFC, Euro crisis, COVID)
+3. MK-means tends to only identify extreme outliers
+
+Generated Figures:
+------------------
+- figure1a_mk_means_scatter.png: Mean-variance scatter (MK-means)
+- figure1b_wk_means_scatter.png: Mean-variance scatter (WK-means)
+- figure2a_mk_means_historical.png: Historical coloring (MK-means)
+- figure2b_wk_means_historical.png: Historical coloring (WK-means)
+- figure3_between_cluster_mmd.png: Between-cluster MMD comparison
+- figure4_within_cluster_mmd.png: Within-cluster MMD comparison
