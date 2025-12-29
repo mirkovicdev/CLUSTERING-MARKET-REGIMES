@@ -97,7 +97,6 @@ regime_clustering/
 ├── main_synthetic.py       # Synthetic experiments
 ├── run_all.py              # Master script
 ├── view_figures.py         # Figure viewer utility
-├── claude.md               # Mathematical documentation
 ├── requirements.txt        # Dependencies
 └── figures/                # Generated plots and animations
 ```
@@ -110,8 +109,6 @@ The Wasserstein K-Means algorithm:
 2. **Empirical Measures**: Treat each window as an empirical probability distribution
 3. **Wasserstein Distance**: Measure dissimilarity between distributions using optimal transport
 4. **K-Means Clustering**: Iteratively assign distributions to clusters and update centroids (Wasserstein barycenters)
-
-For detailed mathematical formulations, see [claude.md](claude.md).
 
 ## Key Concepts
 
